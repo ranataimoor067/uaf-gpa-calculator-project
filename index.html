@@ -1,0 +1,119 @@
+<html>
+
+<head>
+    <title>UAF GPA Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="UAF GPA Calculator | Tayyab Kharl">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://tayyab-kharl.rf.gd/UAF/GPA//">
+    <meta property="og:image" content="http://tayyab-kharl.rf.gd/favicon.ico">
+    <meta property="og:description" content="GPA calculator for UAF students!">
+    <meta name="application-name" content="GPA Calculator">
+    <meta name="author" content="Tayyab Kharl">
+    <meta name="description" content="GPA calculator for UAF students">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/style-gpa.css?v=4.3">
+    <script src="/js/gpa.js?v=4.32"></script>
+    <link href="tailwind.min.css" rel="stylesheet">
+    <script src="/js/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@4"></script>
+
+    <script src="/js/bold.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--GPA-Head Title Area-->
+    <section class="text-gray-500 bg-gray-900  body-font relative" id="gpa">
+        <div class="container px-5 pt-16 mx-auto">
+            <div class="flex flex-col text-center w-full mb-12">
+                <span class="sm:text-4xl text-3xl font-medium title-font mb-4 text-white" id="title">" UAF <span>GPA</span> Calculator "</span>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base" id="sub">A simple Grade Point Average calculator for the students of <strong>'University Of Agriculture'.</strong></p>
+
+            </div>
+            <!--Input Form-->
+            <div class=" mx-auto" id="form-width">
+                <div class="flex flex-wrap ">
+                    <div class="p-2 w-1/2">
+                        <label for="subject1t">Marks of Subject 1</label>
+                        <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base px-4 py-2 my-1" id="subject1t" placeholder="Total Marks" type="number">
+                        <label for="subject1o"></label>
+                        <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base px-4 py-2 my-1" id="subject1o" placeholder="Obtained Marks" type="number">
+                    </div>
+                    <div class="p-2 w-1/2">
+                        <label for="subject2t">Marks of Subject 2</label>
+                        <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base px-4 py-2 my-1" id="subject2t" placeholder="Total Marks" type="number">
+                        <label for="subject2o"></label>
+                        <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base px-4 py-2 my-1" id="subject2o" placeholder="Obtained Marks" type="number">
+                    </div>
+                    <div class="p-2 w-1/2">
+                        <label for="subject3t">Marks of Subject 3</label>
+                        <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base my-1 px-4 py-2" id="subject3t" placeholder="Total Marks" type="number">
+                        <label for="subject3o"></label>
+                        <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base my-1 px-4 py-2" id="subject3o" placeholder="Obtained Marks" type="number">
+                    </div>
+                    <div class="p-2 w-1/2">
+                        <label for="subject4t">Marks of Subject 4</label>
+                        <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base my-1 px-4 py-2" id="subject4t" placeholder="Total Marks" type="number">
+                        <label for="subject4o"></label>
+                        <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base my-1 px-4 py-2" id="subject4o" placeholder="Obtained Marks" type="number">
+                    </div>
+                    <div class="p-2 w-1/2">
+                        <label for="subject5t">Marks of Subject 5</label>
+                        <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base my-1 px-4 py-2" id="subject5t" placeholder="Total Marks" type="number">
+                        <label for="subject5o"></label>
+                        <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base my-1 px-4 py-2" id="subject5o" placeholder="Obtained Marks" type="number">
+                    </div>
+                    <div class="p-2 w-1/2">
+                        <label for="subject6t">Marks of Subject 6</label>
+                        <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base my-1 px-4 py-2" id="subject6t" placeholder="Total Marks" type="number">
+                        <label for="subject6o"></label>
+                        <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base my-1 px-4 py-2" id="subject6o" placeholder="Obtained Marks" type="number">
+                    </div>
+                    <div class="p-2 w-1/2">
+                        <label for="subject7t">Marks of Subject 7</label>
+                        <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base my-1 px-4 py-2" id="subject7t" placeholder="Total Marks" type="number">
+                        <label for="subject7o"></label>
+                        <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base my-1 px-4 py-2" id="subject7o" placeholder="Obtained Marks" type="number">
+                    </div>
+                    <div class="p-2 w-1/2">
+                        <label for="subject8t">Marks of Subject 8</label>
+                        <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base my-1 px-4 py-2" id="subject8t" placeholder="Total Marks" type="number">
+                        <label for="subject8o"></label>
+                        <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base my-1 px-4 py-2" id="subject8o" placeholder="Obtained Marks" type="number">
+                    </div>
+                    <div class="p-2 w-1/2">
+                        <label for="subject9t">Marks of Subject 9</label>
+                        <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base my-1 px-4 py-2" id="subject9t" placeholder="Total Marks" type="number">
+                        <label for="subject9o"></label>
+                        <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base my-1 px-4 py-2" id="subject9o" placeholder="Obtained Marks" type="number">
+                    </div>
+                    <div class="p-2 w-1/2">
+                        <label for="subject10t">Marks of Subject 10</label>
+                        <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base my-1 px-4 py-2" id="subject10t" placeholder="Total Marks" type="number">
+                        <label for="subject10o"></label>
+                        <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base my-1 px-4 py-2" id="subject10o" placeholder="Obtained Marks" type="number">
+                    </div>
+                    <div class="p-2 w-1/2">
+                        <label for="crehrs">Number of Credit Hours</label>
+                        <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base my-1 px-4 py-2" id="crehrs" placeholder="Credit Hours" type="number">
+                    </div>
+                    <div class="p-2 w-full">
+                        <button class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg font-bold" id="subm" type="button" onclick="GPA60()">Calculate</button>
+                    </div>
+                    <div class=" text-center w-full mb-2">
+                        <h1 class="sm:text-4xl text-3xl font-medium title-font mb-4 text-white visible pt-10" id="r">Your GPA is:</h1>
+                        <h3 class="text-white" id="error"></h3>
+                    </div>
+                    <!-- <div>
+                        <button type="button" id="detail" class="hidden text-white bg-red-400  my-6 px-4 py-2 rounded " onclick="table()">More Details +</button>
+                    </div>
+                    <!--Details Table-->
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
